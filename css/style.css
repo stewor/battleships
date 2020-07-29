@@ -1,0 +1,383 @@
+@font-face {
+  font-family: Irregularis;
+  src: url("../font/Irregularis.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Irregularis;
+}
+
+*:focus {
+  outline: none;
+}
+
+body {
+  background-color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  /* height: 60vh; */
+}
+
+.onePaper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 1vh;
+  width: 40%;
+}
+
+.ships {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  flex-direction: column;
+  padding-top: 15vh;
+  padding-bottom: 10vh;
+  width: 15%;
+}
+
+.onePaperRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 1vh;
+  width: 40%;
+}
+
+.letters {
+  width: 335px;
+  height: 30px;
+}
+
+.numberGrill {
+  display: flex;
+  width: 335px;
+}
+
+.number {
+  width: 30px;
+}
+
+.board {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+h1 {
+  font-size: 50px;
+  text-transform: uppercase;
+  color: #ddd;
+}
+
+header {
+  text-align: center;
+  height: 20vh;
+  line-height: 20vh;
+  background-image: url("../img/indextlo.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  border-bottom: 2px solid gray;
+}
+
+.grill {
+  text-align: center;
+  line-height: 30px;
+  width: 30px;
+  height: 30px;
+  float: left;
+  background-color: transparent;
+  border: 1px solid #333;
+}
+
+.big {
+  font-size: 26px;
+  padding-left: 10px;
+}
+
+.on {
+  background-color: rgb(116, 151, 153);
+}
+
+.ong {
+  background-color: rgb(77, 99, 100);
+}
+
+.grill1 {
+  text-align: center;
+  line-height: 30px;
+  width: 30px;
+  height: 30px;
+  float: left;
+}
+
+.oneShip {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  float: left;
+  border: 1px solid rgb(41, 83, 83);
+  margin-left: 1px;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  /* color: hsl(0, 19%, 93%); */
+  min-height: 50px;
+  text-align: center;
+  line-height: 50px;
+  border-top: 1px solid gray;
+}
+
+.footerL {
+  width: 80%;
+  text-align: right;
+}
+
+.footerP {
+  flex-grow: 1;
+}
+
+.fourShip {
+  background-image: url("../img/ship1.png");
+  width: 100px;
+}
+
+.threeShip1 {
+  background-image: url("../img/ship2.png");
+  width: 85px;
+}
+
+.threeShip2 {
+  background-image: url("../img/ship2.png");
+  width: 85px;
+}
+
+.twoShip1 {
+  background-image: url("../img/ship3.png");
+  width: 65px;
+}
+
+.twoShip2 {
+  background-image: url("../img/ship3.png");
+  width: 65px;
+}
+
+.twoShip3 {
+  background-image: url("../img/ship3.png");
+  width: 65px;
+}
+
+.oneShip1 {
+  background-image: url("../img/ship4.png");
+  width: 45px;
+}
+
+.oneShip2 {
+  background-image: url("../img/ship4.png");
+  width: 45px;
+}
+
+.oneShip3 {
+  background-image: url("../img/ship4.png");
+  width: 45px;
+}
+
+.oneShip4 {
+  background-image: url("../img/ship4.png");
+  width: 45px;
+}
+
+.backimage {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 20px;
+}
+
+.wrap {
+  position: relative;
+  overflow: hidden;
+  padding: 5vh 0 5vh 0;
+  background-image: url("../img/karton3.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+main {
+  width: 80vw;
+  margin: 0 auto;
+}
+
+.notclickable {
+  pointer-events: none;
+}
+
+.opacity {
+  opacity: 0.5;
+}
+
+.circle {
+  color: black;
+}
+
+.red {
+  background-color: red;
+  opacity: 0.5;
+}
+
+h3 {
+  padding-top: 1vh;
+  font-size: 26px;
+  color: #333;
+}
+
+.white {
+  color: cornsilk;
+}
+
+.ong1 {
+  background-repeat: no-repeat;
+}
+
+a {
+  color: cornsilk;
+  text-decoration: none;
+}
+
+.animation {
+  animation: animation 2s ease infinite;
+}
+
+@keyframes animation {
+  0% {
+    color: #222;
+  }
+
+  40% {
+    color: #222;
+  }
+
+  50% {
+    color: red;
+  }
+
+  60% {
+    color: #222;
+  }
+
+  100% {
+    color: #222;
+  }
+}
+
+i {
+  font-size: 24px;
+}
+
+@media screen and (max-width: 992px) {
+  .main {
+    width: 90vw;
+    height: auto;
+  }
+
+  .flex {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .onePaper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 3vh;
+    width: 100%;
+  }
+
+  .ships {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+  }
+
+  .onePaperRight {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    padding-top: 3vh;
+  }
+}
+
+@media only screen and (min-device-width: 480px) and (max-device-width: 740px) and (orientation: landscape) {
+  .flex {
+    flex-direction: row;
+    height: auto;
+  }
+
+  .grill1 {
+    line-height: 22px;
+    width: 22px;
+    height: 22px;
+  }
+
+  .grill {
+    line-height: 22px;
+    width: 22px;
+    height: 22px;
+  }
+
+  .letters {
+    width: 255px;
+    height: 22px;
+  }
+
+  .numberGrill {
+    display: flex;
+    width: 255px;
+  }
+
+  .number {
+    width: 22px;
+  }
+
+  .board {
+    display: flex;
+    flex-wrap: wrap;
+    width: 255px;
+  }
+
+  body {
+    font-size: 1.6em;
+  }
+
+  .ships {
+    width: 20%;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  header {
+    line-height: 10vh;
+    height: 10vh;
+  }
+}

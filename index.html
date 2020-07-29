@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>BattleShip</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:url" content="http://stewor.pl" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Battleship logic game" />
+    <meta property="og:description" content="Battleship logic game by stewor" />
+    <meta property="og:image" content="http://stewor.pl/game.png">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/b16d70f8fd.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                appId: 'your-app-id',
+                autoLogAppEvents: true,
+                xfbml: true,
+                version: 'v7.0'
+            });
+        };
+    </script>
+    <script async defer src="https://connect.facebook.net/en_US/sdk.js"></script>
+    <header>
+        <h1>Battleship</h1>
+    </header>
+    <div class="wrap">
+        <main>
+            <div class="flex">
+                <div class="ships">
+
+                    <div class="fourShip backimage opacity">
+                    </div>
+                    <div class="threeShip1 backimage opacity">
+                    </div>
+                    <div class="threeShip2 backimage opacity">
+                    </div>
+                    <div class="twoShip1 backimage opacity">
+                    </div>
+                    <div class="twoShip2 backimage opacity">
+                    </div>
+                    <div class="twoShip3 backimage opacity">
+                    </div>
+                    <div class="oneShip1 backimage opacity">
+                    </div>
+                    <div class="oneShip2 backimage opacity">
+                    </div>
+                    <div class="oneShip3 backimage opacity">
+                    </div>
+                    <div class="oneShip4 backimage opacity">
+                    </div>
+
+                </div>
+                <div class="onePaper">
+                    <div class="letters">
+                        <div class="grill1"></div>
+                        <div class="grill1">A</div>
+                        <div class="grill1">B</div>
+                        <div class="grill1">C</div>
+                        <div class="grill1">D</div>
+                        <div class="grill1">E</div>
+                        <div class="grill1">F</div>
+                        <div class="grill1">G</div>
+                        <div class="grill1">H</div>
+                        <div class="grill1">I</div>
+                        <div class="grill1">J</div>
+                    </div>
+                    <div class="numberGrill">
+                        <div class="number">
+                            <div class="grill1">1</div>
+                            <div class="grill1">2</div>
+                            <div class="grill1">3</div>
+                            <div class="grill1">4</div>
+                            <div class="grill1">5</div>
+                            <div class="grill1">6</div>
+                            <div class="grill1">7</div>
+                            <div class="grill1">8</div>
+                            <div class="grill1">9</div>
+                            <div class="grill1">10</div>
+                        </div>
+                        <div class="boardLeft">
+
+                        </div>
+                    </div>
+                    <h3 class="animation">Choice your ships</h3>
+                </div>
+                <div class="onePaperRight">
+
+                    <div class="letters">
+                        <div class="grill1"></div>
+                        <div class="grill1">A</div>
+                        <div class="grill1">B</div>
+                        <div class="grill1">C</div>
+                        <div class="grill1">D</div>
+                        <div class="grill1">E</div>
+                        <div class="grill1">F</div>
+                        <div class="grill1">G</div>
+                        <div class="grill1">H</div>
+                        <div class="grill1">I</div>
+                        <div class="grill1">J</div>
+                    </div>
+                    <div class="numberGrill">
+                        <div class="number">
+                            <div class="grill1">1</div>
+                            <div class="grill1">2</div>
+                            <div class="grill1">3</div>
+                            <div class="grill1">4</div>
+                            <div class="grill1">5</div>
+                            <div class="grill1">6</div>
+                            <div class="grill1">7</div>
+                            <div class="grill1">8</div>
+                            <div class="grill1">9</div>
+                            <div class="grill1">10</div>
+                        </div>
+                        <div class="boardRight">
+
+                        </div>
+                    </div>
+                    <h3>Wait</h3>
+                </div>
+            </div>
+
+        </main>
+    </div>
+    <footer>
+        <div class="footerL">
+            <a href="https://www.facebook.com/stefan.woronkiewicz" target="_blank">&copy; stewor 2020</a>
+        </div>
+        <div class="footerP">
+            <a target="_blank"
+                href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.stewor.pl%2F&amp;src=sdkpreparse"
+                class="fb-xfbml-parse-ignore"><i class="fab fa-facebook-square big"></i></a>
+            <a target="_blank" href="https://github.com/stewor/ca80"><i class="fab fa-github big"></i></a>
+        </div>
+    </footer>
+    <script src="TableRight.js"></script>
+    <script src="Logic.js"></script>
+    <script src="Show.js"></script>
+    <script src="Game.js"></script>
+</body>
+
+</html>
